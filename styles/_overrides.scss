@@ -1,0 +1,17 @@
+.btn-primary {
+  --bs-btn-color: #fff;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: $dark;
+  font-weight: 700;
+  border-bottom: 1px solid $primary;
+}
+
+.form-control::placeholder {
+  color: $secondary;
+}

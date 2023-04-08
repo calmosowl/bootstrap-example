@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Bootstrap example</title>
+</head>
+<body>
+  <header class="navbar navbar-expand-md navbar-header border-bottom">
+    <nav class="container-xl h-md-100">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row flex-grow-1 align-items-center h-md-100 collapse navbar-collapse" id="navbarToggler">
+        <div class="col-md-4 h-md-100">
+          <ul class="navbar-nav h-md-100">
+            <li><a href="/" class="nav nav-link h-md-100 d-flex align-items-center active" aria-current="true">Photos</a></li>
+            <li><a href="" class="nav nav-link h-md-100 d-flex align-items-center">Videos</a></li>
+            <li><a href="" class="nav nav-link h-md-100 d-flex align-items-center">Podcasts</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-md-3 d-md-flex order-md-3">
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item dropdown">
+              <a class="nav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Ukraine</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav nav-link" href="">Sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-6 col-md-5">
+          <form class="position-relative" role="search">
+            <input class="form-control ps-5 bg-light" type="search" placeholder="Search for anything..." aria-label="Search">
+            <button class="btn bg-transparent ps-3 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit">
+              <i class="bi bi-search fs-6"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
