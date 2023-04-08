@@ -6,3 +6,22 @@
     padding: 0;
   }
 }
+
+.aside-nav-link {
+  border-radius: $btn-border-radius;
+
+  // This can be done with standard classes, but I already use a custom class for decoration,
+  // so I decided to do it this way. Moreover, by default, utility classes with negative margins
+  // are disabled and their inclusion will lead to the generation of additional code
+  margin-left: -0.75rem;
+  padding-left: 0.75rem;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.aside-nav-link-icon {
+  font-size: 18px;
+}

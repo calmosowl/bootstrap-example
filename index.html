@@ -17,10 +17,10 @@
       </button>
       <div class="row flex-grow-1 align-items-center h-md-100 collapse navbar-collapse" id="navbarToggler">
         <div class="col-md-4 h-md-100">
-          <ul class="navbar-nav h-md-100">
-            <li><a href="/" class="nav nav-link h-md-100 d-flex align-items-center active" aria-current="true">Photos</a></li>
-            <li><a href="" class="nav nav-link h-md-100 d-flex align-items-center">Videos</a></li>
-            <li><a href="" class="nav nav-link h-md-100 d-flex align-items-center">Podcasts</a></li>
+          <ul class="navbar-nav h-md-100 gap-md-5">
+            <li><a href="/" class="nav nav-link h-md-100 px-md-0 d-flex align-items-center active" aria-current="true">Photos</a></li>
+            <li><a href="" class="nav nav-link h-md-100 px-md-0 d-flex align-items-center">Videos</a></li>
+            <li><a href="" class="nav nav-link h-md-100 px-md-0 d-flex align-items-center">Podcasts</a></li>
           </ul>
         </div>
         <div class="col-xl-2 col-md-3 d-md-flex order-md-3">
@@ -42,8 +42,8 @@
         </div>
         <div class="col-xl-6 col-md-5">
           <form class="position-relative" role="search">
-            <input class="form-control ps-5 bg-light" type="search" placeholder="Search for anything..." aria-label="Search">
-            <button class="btn bg-transparent ps-3 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit">
+            <input class="form-control ps-6 bg-light" type="search" placeholder="Search for anything..." aria-label="Search">
+            <button class="btn bg-transparent ps-4 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit">
               <i class="bi bi-search fs-6"></i>
             </button>
           </form>
@@ -51,7 +51,47 @@
       </div>
     </nav>
   </header>
-
+  <main class="pt-6">
+    <div class="container-xl">
+      <div class="row justify-content-md-between">
+        <div class="col-md-3">
+          <div class="d-md-none">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideNavbar" aria-controls="offcanvasSideNavbar">
+              <span class="btn btn-primary">
+                <i class="bi bi-filter fs-4"></i>
+              </span>
+              <span class="h6 mb-0 fw-bold ms-2">Filters</span>
+            </button>
+          </div>
+          <nav class="navbar navbar-expand-md">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSideNavbar">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="flex-column fw-bold nav nav-link-secondary w-100">
+                  <li class="nav-item">
+                    <a href="" class="nav-link ms-md-n3 ps-md-3 aside-nav-link"><i class="bi bi-image aside-nav-link-icon"></i><span class="ms-3">All photos</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link ms-md-n3 ps-md-3 aside-nav-link"><i class="bi bi-emoji-smile aside-nav-link-icon"></i><span class="ms-3">Selfies</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link ms-md-n3 ps-md-3 aside-nav-link"><i class="bi bi-clock aside-nav-link-icon"></i><span class="ms-3">Recent</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link ms-md-n3 ps-md-3 aside-nav-link"><i class="bi bi-trash aside-nav-link-icon"></i><span class="ms-3">Deleted</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-8">
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
