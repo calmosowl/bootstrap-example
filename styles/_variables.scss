@@ -1,0 +1,59 @@
+// colors
+$primary: #ed7135;
+$secondary: #666666;
+$dark: #292929;
+$light: #eeeeee;
+
+$theme-colors: (
+  "primary": $primary,
+  "dark": $dark,
+  "light": $light
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+// typography
+$font-family-base: "Commissioner", sans-serif;
+
+// border
+$border-color: #ebebeb;
+
+// navbar-variables
+$navbar-padding-y: 0;
+$navbar-nav-link-padding-x: 0.75rem;
+$nav-link-color: $secondary;
+
+// form-controls
+$input-padding-y: 0.4375rem;
+$input-border-radius: 100px;
+
+// Expand the sizing utility to allow for responsive breakpoints like h-md-100
+$utilities: (
+  "height": (
+    property: height,
+    responsive: true,
+    class: h,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    )
+  ),
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2.5,
+);
