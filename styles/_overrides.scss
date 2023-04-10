@@ -25,11 +25,77 @@ h2 {
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: $dark;
   font-weight: 700;
   border-bottom: 1px solid $primary;
 }
 
-.form-control::placeholder {
-  color: $secondary;
+.form-control {
+  background-color: $light;
+
+  &::placeholder {
+    color: $secondary;
+  }
+}
+
+// Collapse and show more button
+.line-clamp-2.collapse {
+  &:not(.show) {
+    display: inline-block;
+    height: $line-height-base * 2rem;
+    overflow: hidden;
+  }
+}
+
+.collapsing {
+  // 0.5rem - button margin-top (mt-2)
+  height: $line-height-base * 2rem + 0.5rem;
+  overflow: hidden;
+
+  @include transition($transition-collapse);
+}
+
+// Theme
+[data-bs-theme=dark] {
+  --bs-dark: #eeeeee;
+  --bs-light: #292929;
+}
+
+@include color-mode(dark) {
+  .form-control {
+    background-color: var(--bs-body-bg);
+  }
+
+  .btn-dark {
+    --bs-btn-color: var(--bs-light);
+    --bs-btn-bg: var(--bs-dark);
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: var(--bs-light);
+    --bs-btn-hover-bg: #adb5bd;
+    --bs-btn-hover-border-color: #adb5bd;
+    --bs-btn-focus-shadow-rgb: 73, 73, 73;
+    --bs-btn-active-color: var(--bs-light);
+    --bs-btn-active-bg: #545454;
+    --bs-btn-active-border-color: #3e3e3e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(41, 41, 41, 0.125);
+    --bs-btn-disabled-color: var(--bs-light);
+    --bs-btn-disabled-bg: var(--bs-dark);
+    --bs-btn-disabled-border-color: var(--bs-dark);
+  }
+
+  .btn-outline-devider {
+    --bs-btn-color: var(--bs-dark);
+    --bs-btn-border-color: var(--bs-dark);
+    --bs-btn-hover-color: var(--bs-dark);
+    --bs-btn-hover-bg: #333333;
+    --bs-btn-hover-border-color: var(--bs-dark);
+    --bs-btn-focus-shadow-rgb: 235, 235, 235;
+    --bs-btn-active-color: #333333;
+    --bs-btn-active-bg: var(--bs-dark);
+    --bs-btn-active-border-color: var(--bs-dark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(41, 41, 41, 0.125);
+    --bs-btn-disabled-color: var(--bs-dark);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--bs-dark);
+    --bs-gradient: none;
+  }
 }

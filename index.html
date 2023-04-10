@@ -16,15 +16,25 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="row flex-grow-1 align-items-center h-md-100 collapse navbar-collapse" id="navbarToggler">
-        <div class="col-md-4 h-md-100">
+        <div class="col-md-4 h-md-100 d-flex">
           <ul class="navbar-nav h-md-100 gap-md-5">
             <li><a href="/" class="nav nav-link h-md-100 px-md-0 d-flex align-items-center active" aria-current="true">Photos</a></li>
             <li><a href="" class="nav nav-link h-md-100 px-md-0 d-flex align-items-center">Videos</a></li>
             <li><a href="" class="nav nav-link h-md-100 px-md-0 d-flex align-items-center">Podcasts</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-md-3 d-md-flex order-md-3">
+        <div class="col-xl-3 col-md-4 d-md-flex order-md-3">
           <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item">
+              <a href=""
+                 class="nav nav-link"
+                 id="themeToogle"
+                 data-theme="dark"
+                 role="button"
+                 aria-label="Toggle theme (light)">
+                <i class="bi theme-icon"></i>
+              </a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="English, select your language">
                 English
@@ -40,9 +50,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-6 col-md-5">
+        <div class="col-xl-5 col-md-4">
           <form class="position-relative" role="search">
-            <input class="form-control ps-7 bg-light" type="search" placeholder="Search for anything..." aria-label="Search">
+            <input class="form-control ps-7" type="search" placeholder="Search for anything..." aria-label="Search">
             <button class="btn bg-transparent ps-4 py-0 position-absolute top-50 start-0 translate-middle-y" type="submit">
               <i class="bi bi-search fs-6"></i>
             </button>
@@ -98,11 +108,21 @@
           <b class="text-secondary mt-1">150 items</b>
           <div class="row row-cols-1 row-cols-sm-2 g-5 mt-6">
             <div class="col">
-              <div class="card">
+              <div class="card photo-card">
                 <img src="assets/images/thumbnail-1.png" class="card-img-top" alt="">
                 <div class="card-body">
                   <h2 class="card-title">Card title</h2>
-                  <p class="card-text text-secondary">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <div class="collapse line-clamp-2" id="collapse1">
+                    <p class="card-text text-secondary">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <button class="btn btn-transparent my-2 p-0 fw-medium d-none"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse1"
+                          aria-expanded="false"
+                          aria-controls="collapse1">
+                    Show more...
+                  </button>
                 </div>
                 <div class="card-footer bg-transparent">
                   <div class="d-flex flex-wrap gap-4">
@@ -113,11 +133,21 @@
               </div>
             </div>
             <div class="col">
-              <div class="card">
+              <div class="card photo-card">
                 <img src="assets/images/thumbnail-2.png" class="card-img-top" alt="">
                 <div class="card-body">
                   <h2 class="card-title">Card title</h2>
-                  <p class="card-text text-secondary">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <div class="collapse line-clamp-2" id="collapse2">
+                    <p class="card-text text-secondary">This card has supporting text below as a natural lead-in to additional content. This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <button class="btn btn-transparent my-2 p-0 fw-medium d-none"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse2"
+                          aria-expanded="false"
+                          aria-controls="collapse2">
+                    Show more...
+                  </button>
                 </div>
                 <div class="card-footer bg-transparent">
                   <div class="d-flex flex-wrap gap-4">

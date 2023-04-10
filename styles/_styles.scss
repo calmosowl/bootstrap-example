@@ -25,3 +25,12 @@
 .aside-nav-link-icon {
   font-size: 18px;
 }
+
+// Theme
+[data-theme="dark"] .theme-icon::before {
+  content: "\f494";
+} 
+
+[data-theme="light"] .theme-icon::before {
+  content: "\F1D2";
+}
