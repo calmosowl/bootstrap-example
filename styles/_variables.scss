@@ -1,13 +1,17 @@
-// colors
+// Colors
 $primary: #ed7135;
 $secondary: #666666;
 $dark: #292929;
 $light: #eeeeee;
+$border-color: #ebebeb;
+$body-color: $dark;
 
 $theme-colors: (
   "primary": $primary,
+  "secondary": $secondary,
   "dark": $dark,
-  "light": $light
+  "light": $light,
+  "devider": $border-color
 );
 
 $container-max-widths: (
@@ -19,18 +23,26 @@ $container-max-widths: (
 
 // typography
 $font-family-base: "Commissioner", sans-serif;
+$h2-font-size: 1.5rem;
 
-// border
-$border-color: #ebebeb;
-
-// navbar-variables
+// Components
+// navbar
 $navbar-padding-y: 0;
 $navbar-nav-link-padding-x: 0.75rem;
 $nav-link-color: $secondary;
 
-// form-controls
-$input-padding-y: 0.4375rem;
+// buttons + form-controls
+$input-btn-padding-y: 0.4375rem;
 $input-border-radius: 100px;
+$input-btn-padding-x: 1rem;
+
+$btn-font-weight: 700;
+
+// card
+$card-cap-padding-y: 1rem;
+$card-cap-padding-x: 1rem;
+$card-height: 100%;
+$card-spacer-x: 1.5rem;
 
 // Expand the sizing utility to allow for responsive breakpoints like h-md-100
 $utilities: (
@@ -56,5 +68,6 @@ $spacers: (
   3: $spacer * .75,
   4: $spacer,
   5: $spacer * 1.5,
-  6: $spacer * 2.5,
+  6: $spacer * 2,
+  7: $spacer * 2.5,
 );

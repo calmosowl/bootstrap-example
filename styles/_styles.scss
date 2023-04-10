@@ -1,7 +1,7 @@
 .navbar-header {
   padding: 1rem 0;
 
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     height: 72px;
     padding: 0;
   }

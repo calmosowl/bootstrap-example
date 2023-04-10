@@ -1,12 +1,27 @@
 .btn-primary {
-  --bs-btn-color: #ffffff;
-  --bs-btn-hover-color: #ffffff;
-  --bs-btn-active-color: #ffffff;
-  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-color: white;
+  --bs-btn-hover-color: white;
+  --bs-btn-active-color: white;
+  --bs-btn-disabled-color: white;
+}
+
+.btn-outline-devider {
+  --bs-btn-color: var(--bs-dark);
+  --bs-btn-hover-color: var(--bs-dark);
+  --bs-btn-active-color: var(--bs-dark);
+  --bs-btn-disabled-color: var(--bs-dark);
 }
 
 h1, h2, h3 {
   font-weight: 700;
+}
+
+h1 {
+  line-height: 3.75rem;
+}
+
+h2 {
+  line-height: 2.25rem;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
