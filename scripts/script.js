@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  generateCards(1);
+  generateCards();
   themeToggle();
 });
 
@@ -88,7 +88,7 @@ function generateString(maxLength) {
 // Card
 let currentPage = 1;
 
-function generateCards(pageIndex) {
+function generateCards(pageIndex = 1) {
   currentPage = pageIndex;
 
   class Card {
