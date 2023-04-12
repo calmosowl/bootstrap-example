@@ -1,6 +1,6 @@
 function getCardTemplate(card) {
   return `
-        <div class="card">
+        <article class="card">
           <img src="${card.src}" class="card-img-top object-fit-cover" width="356" height="200" alt="${card.title}">
           <div class="card-body">
             <h2 class="card-title">${card.title}</h2>
@@ -22,7 +22,7 @@ function getCardTemplate(card) {
               <button class="btn btn-outline-devider">Share</button>
             </div>
           </div>
-        </div>
+        </article>
       `;
 }
 
