@@ -16,7 +16,7 @@
   margin-left: -0.75rem;
   padding-left: 0.75rem;
 
-  &:hover {
+  &:hover, &.active {
     background-color: $primary;
     color: $white;
   }

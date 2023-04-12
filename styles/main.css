@@ -12732,7 +12732,7 @@ h2, .h2 {
   margin-left: -0.75rem;
   padding-left: 0.75rem;
 }
-.aside-nav-link:hover {
+.aside-nav-link:hover, .aside-nav-link.active {
   background-color: #ed7135;
   color: #fff;
 }
